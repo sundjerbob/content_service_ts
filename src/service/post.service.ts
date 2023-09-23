@@ -1,6 +1,6 @@
 import {Injectable} from "@nestjs/common";
 import {CreateTableCommand, CreateTableOutput} from "@aws-sdk/client-dynamodb";
-import postsDataStruct from "../database/entity/post.model";
+import postsDataStruct from "../database/migration/post.model";
 import {DynamoDBDocumentClient} from "@aws-sdk/lib-dynamodb";
 import dbClient from "../database/db.client";
 

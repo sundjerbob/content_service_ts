@@ -1,0 +1,6 @@
+
+//terminal cmd
+//start db from C:\Users\Tadija\dynamodb_local_latest
+
+java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb -dbPath DynamoDB_Local_Data
+
