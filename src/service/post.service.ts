@@ -11,9 +11,9 @@ export class PostService {
     async createTable(): Promise<CreateTableOutput> {
         const command =  new CreateTableCommand(postsDataStruct);
 
-            let kita = await DynamoDBDocumentClient.from(dbClient).send(command);
-            console.log(kita.TableDescription);
-            return kita;
+            let cli = await DynamoDBDocumentClient.from(dbClient).send(command);
+            console.log(cli.TableDescription);
+            return cli;
 
 
     }
