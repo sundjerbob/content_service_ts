@@ -4,7 +4,7 @@ import { CreateTableInput } from '@aws-sdk/client-dynamodb';
 
 
 const postsDataStruct : CreateTableInput = {
-    TableName: 'Kita',
+    TableName: 'Users',
     KeySchema: [
         { AttributeName: 'PK', KeyType: 'HASH' },
         { AttributeName: 'SK', KeyType: 'RANGE' }
