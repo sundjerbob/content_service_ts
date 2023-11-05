@@ -12,7 +12,7 @@ export class PostService {
         const command =  new CreateTableCommand(postsDataStruct);
 
             let cli = await DynamoDBDocumentClient.from(dbClient).send(command);
-            console.log(cli.TableDescription);
+            console.log(cli.$metadata + ' ' + cli.TableDescription);
             return cli;
 
 
